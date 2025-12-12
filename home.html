@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Page Title</title>
+<link rel="icon" type="image/png" href="s1.png">
+<link rel="stylesheet" href="css/estil.css">
+<style>
+    * {
+      box-sizing: border-box;
+      font-family: Verdana;
+      color: #555;
+    }
+
+    .cap {
+      background-color: #e5e5e5;
+      padding: 15px;
+      text-align: left;
+    }
+
+    .cap h1 {
+      font-size: 16px;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .menu {
+      float: left;
+      width: 13%;
+      text-align: left;
+      margin-top: 40px;
+    }
+
+    .menu a {
+      background-color: #f33;
+      padding: 8px;
+      margin-top: 10px;
+      display: block;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
+      margin-left: 60px; 
+    }
+
+    .main h2 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: red;
+    }
+
+    .main p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .right {
+      float: left;
+      width: 15%;
+      padding: 10px;
+      margin-top: 200px;
+      text-align: left;
+      font-size: 12px;
+      background-color: transparent;
+      margin-left: 160px;
+    }
+
+    .right h2 {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: red;
+    }
+
+    .right p {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .peu {
+      color: #000;
+      background-color: #d4d4d4;
+      text-align: center;
+      padding: 10px;
+      margin-top: 100px;
+      clear: both;
+    }
+
+    @media only screen and (max-width: 620px) {
+      .menu, .main, .right {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+      }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="cap">
+  <img src="samba.png" alt="" style="max-height:50px; display:block; margin-bottom:10px;">
+  <h1>opening windows to a wider world</h1>
+</div>
+
+<div style="overflow:auto">
+
+  <div class="menu">
+    <a href="home.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html">About</a>
+  </div>
+
+  <div class="main">
+    <h2>Home Samba</h2>
+    <p>Welcome to our site. Here you will find information, updates, and resources related to the Samba project. Our goal is to offer a simple and accessible way to learn about Samba’s capabilities, its role in network interoperability, and its ongoing development.</p>
+    <p>Whether you are a system administrator, a developer, or simply curious about the project, this page provides an entry point to documentation, news, and community initiatives. Explore the sections above to discover more about what Samba can do for your environment.</p>
+    
+  </div>
+
+  <div class="right">
+    <img src="samba-logo.png 2 rojo.png" alt="Imagen Donations" style="max-width:100%; margin-bottom:10px; display:block;">
+    <h2>Donations</h2>
+    <p>Nowadays, the Samba Team needs a dollar instead of pizza ;-)</p>
+    <h2>10 years of Samba!</h2>
+    <p>Who would have believed that would eventually lead to the project that is now Samba? Thanks to the involvement of countless individuals over the years Samba has come a long way in the last decade, and is set to continue improving for the forseeable future.</p>
+  </div>
+
+</div>
+
+<div class="peu">
+    <img src="samba.png" alt="Imagen Footer" style="width:60px; margin:0 auto 10px; display:block;">
+    <p style="font-size:12px; color:#333; font-family:Arial, sans-serif; margin:0;">
+        (c) Francisco Jose March Benitez 2005
+    </p>
+</div>
+
+</body>
+</html>
