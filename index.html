@@ -3,50 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Page Title</title>
+<title>About Samba</title>
 <link rel="icon" type="image/png" href="s1.png">
 <style>
 * {
   box-sizing: border-box;
   font-family: Verdana;
   color: #555;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
 }
 
 .cap {
   background-color: #e5e5e5;
   padding: 15px;
+  text-align: left;
 }
 
 .cap h1 {
   font-size: 16px;
+  margin: 0;
   font-weight: normal;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .menu {
-  flex: 1 1 180px;
-  padding: 20px;
+  float: left;
+  width: 13%;
+  text-align: left;
+  margin-top: 40px;
 }
 
 .menu a {
   background-color: #f33;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 8px;
+  margin-top: 10px;
   display: block;
+  width: 100%;
   color: white;
   text-decoration: none;
+  text-align: left;
   font-size: 14px;
 }
 
@@ -55,12 +48,15 @@ body {
 }
 
 .main {
-  flex: 3 1 400px;
-  padding: 20px;
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  margin-left: 60px;
 }
 
 .main h2 {
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   font-size: 20px;
   color: red;
 }
@@ -71,41 +67,41 @@ body {
 }
 
 .right {
-  flex: 1 1 220px;
-  padding: 20px;
+  float: left;
+  width: 15%;
+  padding: 10px;
+  margin-top: 200px;
+  text-align: left;
   font-size: 12px;
+  margin-left: 160px;
 }
 
 .right h2 {
   font-size: 14px;
+  margin-top: 10px;
   margin-bottom: 5px;
   color: red;
 }
 
 .right p {
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
 .peu {
+  color: #000;
   background-color: #d4d4d4;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+  padding: 10px;
+  margin-top: 100px;
+  clear: both;
 }
 
-.peu p {
-  font-size: 12px;
-  color: #333;
-  font-family: Arial, sans-serif;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
+@media only screen and (max-width: 768px) {
   .menu, .main, .right {
-    flex: 1 1 100%;
+    float: none;
+    width: 100%;
+    margin-left: 0;
   }
 }
 </style>
@@ -118,13 +114,13 @@ body {
   <h1>opening windows to a wider world</h1>
 </div>
 
-<div class="container">
+<div style="overflow:auto">
 
   <div class="menu">
+    <a href="index.html">About</a>
     <a href="home.html">Home</a>
     <a href="news.html">News</a>
     <a href="contact.html">Contact</a>
-    <a href="index.html">About</a>
   </div>
 
   <div class="main">
@@ -132,15 +128,15 @@ body {
     <p>Samba is the standard Windows interoperability suite of programs for Linux and Unix.</p>
     <p>Samba is Free Software licensed under the GNU General Public License, the Samba project is a member of the Software Freedom Conservancy.</p>
     <p>Since 1992, Samba has provided secure, stable and fast file and print services for all clients using the SMB/CIFS protocol.</p>
-    <p>Samba is an important component to seamlessly integrate Linux/Unix Servers and Desktops into Active Directory environments.</p>
+    <p>Samba can function as a domain controller or as a regular domain member.</p>
   </div>
 
   <div class="right">
-    <img src="samba-logo-2-rojo.png" alt="Donations" style="max-width:100%; margin-bottom:10px;">
+    <img src="samba-logo-2-rojo.png" alt="Donations" style="max-width:100%; margin-bottom:10px; display:block;">
     <h2>Donations</h2>
     <p>Nowadays, the Samba Team needs a dollar instead of pizza ;-)</p>
     <h2>10 years of Samba!</h2>
-    <p>Thanks to the involvement of countless individuals over the years Samba has come a long way.</p>
+    <p>Thanks to countless contributors, Samba has come a long way over the last decade and continues to improve for the foreseeable future.</p>
   </div>
 
 </div>
@@ -152,4 +148,3 @@ body {
 
 </body>
 </html>
-
