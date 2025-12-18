@@ -5,118 +5,120 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Page Title</title>
 <link rel="icon" type="image/png" href="s1.png">
-<link rel="stylesheet" href="css/estil.css">
 <style>
-    * {
-      box-sizing: border-box;
-      font-family: Verdana;
-      color: #555;
-    }
+* {
+  box-sizing: border-box;
+  font-family: Verdana;
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
 
-    .cap {
-      background-color: #e5e5e5;
-      padding: 15px;
-      text-align: left;
-    }
+body {
+  display: flex;
+  flex-direction: column;
+}
 
-    .cap h1 {
-      font-size: 16px;
-      margin: 0;
-      font-weight: normal;
-    }
+.cap {
+  background-color: #e5e5e5;
+  padding: 15px;
+}
 
-    .menu {
-      float: left;
-      width: 13%;
-      text-align: left;
-      margin-top: 40px;
-    }
+.cap h1 {
+  font-size: 16px;
+  font-weight: normal;
+}
 
-    .menu a {
-      background-color: #f33;
-      padding: 8px;
-      margin-top: 10px;
-      display: block;
-      width: 100%;
-      color: white;
-      text-decoration: none;
-      text-align: left;
-      font-size: 14px;
-    }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-    .menu a:hover {
-      text-decoration: underline;
-    }
+.menu {
+  flex: 1 1 180px;
+  padding: 20px;
+}
 
-    .main {
-      float: left;
-      width: 60%;
-      padding: 0 20px;
-      margin-left: 60px; 
-    }
+.menu a {
+  background-color: #f33;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-    .main h2 {
-      margin-top: 30px;
-      margin-bottom: 20px;
-      font-size: 20px;
-      color: red;
-    }
+.menu a:hover {
+  text-decoration: underline;
+}
 
-    .main p {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
+.main {
+  flex: 3 1 400px;
+  padding: 20px;
+}
 
-    .right {
-      float: left;
-      width: 15%;
-      padding: 10px;
-      margin-top: 200px;
-      text-align: left;
-      font-size: 12px;
-      background-color: transparent;
-      margin-left: 160px;
-    }
+.main h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: red;
+}
 
-    .right h2 {
-      font-size: 14px;
-      margin-top: 10px;
-      margin-bottom: 5px;
-      color: red;
-    }
+.main p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 
-    .right p {
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
+.right {
+  flex: 1 1 220px;
+  padding: 20px;
+  font-size: 12px;
+}
 
-    .peu {
-      color: #000;
-      background-color: #d4d4d4;
-      text-align: center;
-      padding: 10px;
-      margin-top: 100px;
-      clear: both;
-    }
+.right h2 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: red;
+}
 
-    @media only screen and (max-width: 620px) {
-      .menu, .main, .right {
-        width: 100%;
-        float: none;
-        margin-left: 0;
-      }
-    }
+.right p {
+  margin-bottom: 10px;
+}
+
+.peu {
+  background-color: #d4d4d4;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.peu p {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .menu, .main, .right {
+    flex: 1 1 100%;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <div class="cap">
-  <img src="samba.png" alt="" style="max-height:50px; display:block; margin-bottom:10px;">
+  <img src="samba.png" alt="Samba" style="max-height:50px; display:block; margin-bottom:10px;">
   <h1>opening windows to a wider world</h1>
 </div>
 
-<div style="overflow:auto">
+<div class="container">
 
   <div class="menu">
     <a href="home.html">Home</a>
@@ -129,11 +131,10 @@
     <h2>Home Samba</h2>
     <p>Welcome to our site. Here you will find information, updates, and resources related to the Samba project. Our goal is to offer a simple and accessible way to learn about Samba’s capabilities, its role in network interoperability, and its ongoing development.</p>
     <p>Whether you are a system administrator, a developer, or simply curious about the project, this page provides an entry point to documentation, news, and community initiatives. Explore the sections above to discover more about what Samba can do for your environment.</p>
-    
   </div>
 
   <div class="right">
-    <img src="samba-logo.png 2 rojo.png" alt="Imagen Donations" style="max-width:100%; margin-bottom:10px; display:block;">
+    <img src="samba-logo-2-rojo.png" alt="Donations" style="max-width:100%; margin-bottom:10px;">
     <h2>Donations</h2>
     <p>Nowadays, the Samba Team needs a dollar instead of pizza ;-)</p>
     <h2>10 years of Samba!</h2>
@@ -143,10 +144,8 @@
 </div>
 
 <div class="peu">
-    <img src="samba.png" alt="Imagen Footer" style="width:60px; margin:0 auto 10px; display:block;">
-    <p style="font-size:12px; color:#333; font-family:Arial, sans-serif; margin:0;">
-        (c) Francisco Jose March Benitez 2005
-    </p>
+  <img src="samba.png" alt="Samba Footer" style="width:60px; margin:0 auto 10px; display:block;">
+  <p>(c) Francisco Jose March Benitez 2005</p>
 </div>
 
 </body>
